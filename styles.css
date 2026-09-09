@@ -3382,6 +3382,177 @@ mark {
   }
 }
 
+/* Final dark-theme pass for the УК / КоАП pocket guide.
+   These rules intentionally follow the component styles so the guide cannot
+   fall back to its original light surfaces. */
+.guide-code-tabs button {
+  color: var(--text);
+  border-color: #303d4d;
+  border-bottom-color: #303d4d;
+  background: #101721;
+}
+
+.guide-code-tabs button:hover {
+  color: var(--text-strong);
+  border-color: #435874;
+  background: #162130;
+}
+
+.guide-code-tabs button.is-active {
+  color: var(--text-strong);
+  border-color: #4b6382;
+  border-bottom-color: var(--red);
+  background: #182434;
+  box-shadow: 0 9px 24px rgba(0, 0, 0, 0.3);
+}
+
+.guide-code-tabs button > span {
+  background: #0b111a;
+}
+
+.guide-code-tabs button.is-active > span {
+  background: #16375c;
+}
+
+.guide-code-tabs strong {
+  color: var(--text-strong);
+}
+
+.guide-code-tabs small {
+  color: #929fb0;
+}
+
+.guide-toolbar {
+  border-color: #2b3848;
+  background: rgba(13, 20, 30, 0.96);
+}
+
+.guide-scope {
+  border-color: #354457;
+}
+
+.guide-scope button {
+  color: #a3afbd;
+  border-right-color: #354457;
+}
+
+.guide-scope button:hover {
+  color: var(--text-strong);
+  background: #172231;
+}
+
+.guide-scope button.is-active {
+  color: #f3f6f9;
+  background: #1a3455;
+}
+
+.guide-search {
+  border-color: #354457;
+  background: #0d141e;
+}
+
+.guide-search:focus-within {
+  border-color: #5d8fc9;
+  box-shadow: 0 0 0 3px rgba(79, 134, 196, 0.16);
+}
+
+.guide-search svg {
+  stroke: var(--link);
+}
+
+.guide-search input {
+  color: var(--text-strong);
+}
+
+.guide-search input::placeholder {
+  color: #738093;
+}
+
+.guide-toolbar output {
+  color: #98a5b5;
+}
+
+.guide-legend {
+  color: #a5b0be;
+  border-left-color: var(--blue);
+  background: #101923;
+}
+
+.guide-table {
+  border-color: #2c3949;
+  border-top-color: #34475f;
+  background: #101721;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.34);
+}
+
+.guide-table-head {
+  color: #d3dbe5;
+  background: #0b111a;
+}
+
+.guide-chapter {
+  color: #dbe3ec;
+  border-top-color: #2b3b50;
+  background: #1a283a;
+}
+
+.guide-row {
+  color: var(--text);
+  border-top-color: #273341;
+  background: #101721;
+}
+
+.guide-row:hover {
+  border-left-color: var(--blue);
+  background: #162130;
+  box-shadow: inset 0 0 0 1px #33475f;
+}
+
+.guide-row.is-frequent {
+  border-left-color: var(--red);
+  background: linear-gradient(90deg, #25161b 0, #101721 170px);
+}
+
+.guide-row.is-frequent:hover {
+  background: linear-gradient(90deg, #32191f 0, #162130 190px);
+}
+
+.guide-row-ref > strong {
+  color: var(--link);
+}
+
+.guide-row-focus,
+.guide-row-consequence small,
+.guide-row-priority small,
+.guide-row-arrow {
+  color: #8f9cad;
+}
+
+.guide-row-title > strong {
+  color: var(--text-strong);
+}
+
+.guide-row-consequence,
+.guide-row-consequence.is-sanction {
+  color: #bec7d2;
+}
+
+.guide-row-consequence > span::before {
+  background: #66758a;
+}
+
+.guide-row-consequence.is-sanction > span::before {
+  background: var(--red);
+}
+
+.priority-none {
+  color: #778496;
+}
+
+.guide-empty strong {
+  color: var(--text-strong);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
