@@ -1,0 +1,22 @@
+{
+  "format": "gzip-chunks-v1",
+  "parts": [
+    "./data/corpus-000.bin",
+    "./data/corpus-001.bin",
+    "./data/corpus-002.bin",
+    "./data/corpus-003.bin",
+    "./data/corpus-004.bin",
+    "./data/corpus-005.bin",
+    "./data/corpus-006.bin",
+    "./data/corpus-007.bin",
+    "./data/corpus-008.bin",
+    "./data/corpus-009.bin",
+    "./data/corpus-010.bin",
+    "./data/corpus-011.bin",
+    "./data/corpus-012.bin",
+    "./data/corpus-013.bin",
+    "./data/corpus-014.bin",
+    "./data/corpus-015.bin",
+    "./data/corpus-016.bin"
+  ]
+}
